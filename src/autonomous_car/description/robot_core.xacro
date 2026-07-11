@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Robot dimensions -->
+  <xacro:property name="body_length" value="0.40"/>
+  <xacro:property name="body_width"  value="0.30"/>
+  <xacro:property name="body_height" value="0.10"/>
+
+  <!-- Base footprint -->
+  <link name="base_footprint"/>
+
+  <!-- Chassis -->
+  <link name="base_link">
+
+    <visual>
+      <origin xyz="0 0 ${body_height/2}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${body_length} ${body_width} ${body_height}"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 ${body_height/2}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${body_length} ${body_width} ${body_height}"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <origin xyz="0 0 ${body_height/2}"/>
+      <mass value="8.0"/>
+
+      <inertia
+          ixx="0.08"
+          ixy="0"
+          ixz="0"
+          iyy="0.12"
+          iyz="0"
+          izz="0.15"/>
+    </inertial>
+
+  </link>
+
+  <!-- Fixed joint -->
+  <joint name="base_joint" type="fixed">
+      <parent link="base_footprint"/>
+      <child link="base_link"/>
+      <origin xyz="0 0 0"/>
+  </joint>
+
+</robot>

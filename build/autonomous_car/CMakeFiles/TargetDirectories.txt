@@ -1,0 +1,9 @@
+/home/boss/Z4Ge/build/autonomous_car/CMakeFiles/uninstall.dir
+/home/boss/Z4Ge/build/autonomous_car/CMakeFiles/autonomous_car_uninstall.dir
+/home/boss/Z4Ge/build/autonomous_car/CMakeFiles/test.dir
+/home/boss/Z4Ge/build/autonomous_car/CMakeFiles/edit_cache.dir
+/home/boss/Z4Ge/build/autonomous_car/CMakeFiles/rebuild_cache.dir
+/home/boss/Z4Ge/build/autonomous_car/CMakeFiles/list_install_components.dir
+/home/boss/Z4Ge/build/autonomous_car/CMakeFiles/install.dir
+/home/boss/Z4Ge/build/autonomous_car/CMakeFiles/install/local.dir
+/home/boss/Z4Ge/build/autonomous_car/CMakeFiles/install/strip.dir
