@@ -1,0 +1,70 @@
+[0.012s] Invoking command in '/home/boss/Z4Ge/build/lidar_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/boss/Z4Ge/src/lidar_demo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/boss/Z4Ge/install/lidar_demo
+[0.091s] -- The C compiler identification is GNU 13.3.0
+[0.164s] -- The CXX compiler identification is GNU 13.3.0
+[0.185s] -- Detecting C compiler ABI info
+[0.310s] -- Detecting C compiler ABI info - done
+[0.321s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.321s] -- Detecting C compile features
+[0.321s] -- Detecting C compile features - done
+[0.334s] -- Detecting CXX compiler ABI info
+[0.470s] -- Detecting CXX compiler ABI info - done
+[0.482s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.482s] -- Detecting CXX compile features
+[0.483s] -- Detecting CXX compile features - done
+[0.488s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.690s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.788s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.856s] -- Found xacro: 2.1.1 (/opt/ros/jazzy/share/xacro/cmake)
+[0.861s] -- Found robot_state_publisher: 3.3.4 (/opt/ros/jazzy/share/robot_state_publisher/cmake)
+[0.929s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.951s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.977s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.008s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.152s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.158s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.287s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.316s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.348s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.785s] -- Found ros_gz_sim: 1.0.22 (/opt/ros/jazzy/share/ros_gz_sim/cmake)
+[1.794s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.954s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.954s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.956s] -- Added test 'lint_cmake' to check CMake code style
+[1.957s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.960s] -- Added test 'xmllint' to check XML markup files
+[1.962s] -- Configuring done (1.9s)
+[1.970s] -- Generating done (0.0s)
+[1.973s] -- Build files have been written to: /home/boss/Z4Ge/build/lidar_demo
+[1.991s] Invoked command in '/home/boss/Z4Ge/build/lidar_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/boss/Z4Ge/src/lidar_demo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/boss/Z4Ge/install/lidar_demo
+[1.991s] Invoking command in '/home/boss/Z4Ge/build/lidar_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/boss/Z4Ge/build/lidar_demo -- -j16 -l16
+[2.056s] Invoked command in '/home/boss/Z4Ge/build/lidar_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/boss/Z4Ge/build/lidar_demo -- -j16 -l16
+[2.057s] Invoking command in '/home/boss/Z4Ge/build/lidar_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/boss/Z4Ge/build/lidar_demo
+[2.069s] -- Install configuration: ""
+[2.069s] -- Execute custom install script
+[2.070s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/description/gazebo.xacro
+[2.084s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/description/lidar.xacro
+[2.098s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/description/materials.xacro
+[2.115s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/description/robot.urdf.xacro
+[2.129s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/description/robot_core.xacro
+[2.144s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/description/ros2_control.xacro
+[2.157s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/description/wheels.xacro
+[2.172s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/launch/gazebo.launch.py
+[2.185s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/worlds/empty.sdf
+[2.201s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/config/bridge.yaml
+[2.216s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/config/controllers.yaml
+[2.230s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/ament_index/resource_index/package_run_dependencies/lidar_demo
+[2.244s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/ament_index/resource_index/parent_prefix_path/lidar_demo
+[2.258s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/environment/ament_prefix_path.sh
+[2.272s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/environment/ament_prefix_path.dsv
+[2.285s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/environment/path.sh
+[2.300s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/environment/path.dsv
+[2.314s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/local_setup.bash
+[2.329s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/local_setup.sh
+[2.343s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/local_setup.zsh
+[2.358s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/local_setup.dsv
+[2.371s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/package.dsv
+[2.385s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/ament_index/resource_index/packages/lidar_demo
+[2.399s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/cmake/lidar_demoConfig.cmake
+[2.414s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/cmake/lidar_demoConfig-version.cmake
+[2.428s] -- Symlinking: /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/package.xml
+[2.448s] Invoked command in '/home/boss/Z4Ge/build/lidar_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/boss/Z4Ge/build/lidar_demo

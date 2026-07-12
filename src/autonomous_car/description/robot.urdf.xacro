@@ -9,6 +9,8 @@
 
   <xacro:include filename="$(find autonomous_car)/description/wheels.xacro"/>
 
+  <xacro:include filename="$(find autonomous_car)/description/lidar.xacro"/>
+
   <xacro:include filename="$(find autonomous_car)/description/ros2_control.xacro"/>
 
   <xacro:include filename="$(find autonomous_car)/description/gazebo.xacro"/>

@@ -1,0 +1,97 @@
+[INFO] [launch]: All log files can be found below /home/boss/.ros/log/2026-07-12-16-39-51-443270-robo-126093
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gazebo-1]: process started with pid [126098]
+[INFO] [robot_state_publisher-2]: process started with pid [126099]
+[INFO] [create-3]: process started with pid [126100]
+[INFO] [parameter_bridge-4]: process started with pid [126102]
+[robot_state_publisher-2] [WARN] [1783854591.892037838] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-2] [INFO] [1783854591.892190117] [robot_state_publisher]: Robot initialized
+[create-3] [INFO] [1783854591.902443693] [ros_gz_sim]: Requesting list of world names.
+[parameter_bridge-4] [INFO] [1783854591.925496205] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1783854591.927281823] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> /scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[create-3] [INFO] [1783854592.648299664] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[create-3] [INFO] [1783854592.832319845] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-3]: process has finished cleanly [pid 126100]
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="lidar_demo"]/link[@name="base_link"]/sensor[@name="lidar_sensor"]/gz_frame_id:<data-string>:L94]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="lidar_demo"]/link[@name="base_link"]/sensor[@name="lidar_sensor"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gazebo-1] [INFO] [1783854594.346919659] [gz_ros_control]: Loading controller_manager
+[gazebo-1] [INFO] [1783854594.376238675] [controller_manager]: Using ROS clock for triggering controller manager cycles.
+[gazebo-1] [INFO] [1783854594.383254447] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[gazebo-1] [WARN] [1783854594.388771425] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[gazebo-1] [INFO] [1783854594.393681142] [controller_manager]: Received robot description from topic.
+[gazebo-1] [INFO] [1783854594.393760377] [controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
+[gazebo-1] [INFO] [1783854594.398455230] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
+[gazebo-1] [INFO] [1783854594.398717560] [gz_ros_control]: Loading joint: front_left_wheel_joint
+[gazebo-1] [INFO] [1783854594.398742155] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1783854594.398750130] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1783854594.398798068] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1783854594.398811322] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1783854594.398815981] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1783854594.398840596] [gz_ros_control]: Loading joint: front_right_wheel_joint
+[gazebo-1] [INFO] [1783854594.398847669] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1783854594.398851896] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1783854594.398856485] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1783854594.398861213] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1783854594.398865211] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1783854594.398877112] [gz_ros_control]: Loading joint: rear_left_wheel_joint
+[gazebo-1] [INFO] [1783854594.398882422] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1783854594.398885758] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1783854594.398889625] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1783854594.398893182] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1783854594.398897089] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1783854594.398907468] [gz_ros_control]: Loading joint: rear_right_wheel_joint
+[gazebo-1] [INFO] [1783854594.398911906] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1783854594.398915703] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1783854594.398953612] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1783854594.398961647] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1783854594.398967137] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1783854594.399152717] [controller_manager]: Initialize hardware 'GazeboSystem' 
+[gazebo-1] [WARN] [1783854594.399194153] [controller_manager.hardware_component.system.GazeboSystem]: Executor is not available during hardware component initialization for 'GazeboSystem'. Skipping node creation!
+[gazebo-1] [INFO] [1783854594.399325193] [controller_manager]: Successful initialization of hardware 'GazeboSystem'
+[gazebo-1] [INFO] [1783854594.399553130] [controller_manager]: Activating component 'GazeboSystem'.
+[gazebo-1] [INFO] [1783854594.399589466] [resource_manager]: 'configure' hardware 'GazeboSystem' 
+[gazebo-1] [INFO] [1783854594.399599685] [gz_ros_control]: System Successfully configured!
+[gazebo-1] [INFO] [1783854594.399621335] [resource_manager]: Successful 'configure' of hardware 'GazeboSystem'
+[gazebo-1] [INFO] [1783854594.399639317] [resource_manager]: 'activate' hardware 'GazeboSystem' 
+[gazebo-1] [INFO] [1783854594.399672739] [resource_manager]: Successful 'activate' of hardware 'GazeboSystem'
+[gazebo-1] [WARN] [1783854594.399822393] [controller_manager]: Component 'GazeboSystem' does not have read or write statistics initialized, skipping registration.
+[gazebo-1] [INFO] [1783854594.399840997] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[gazebo-1] libEGL warning: pci id for fd 139: 10de:25a2, driver (null)
+[gazebo-1] 
+[gazebo-1] pci id for fd 140: 10de:25a2, driver (null)
+[gazebo-1] pci id for fd 141: 10de:25a2, driver (null)
+[gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[gazebo-1] libEGL warning: pci id for fd 139: 10de:25a2, driver (null)
+[gazebo-1] 
+[gazebo-1] pci id for fd 140: 10de:25a2, driver (null)
+[gazebo-1] pci id for fd 141: 10de:25a2, driver (null)
+[gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[gazebo-1] libEGL warning: pci id for fd 139: 10de:25a2, driver (null)
+[gazebo-1] 
+[INFO] [spawner-5]: process started with pid [126307]
+[gazebo-1] [INFO] [1783854595.062281760] [controller_manager]: Received robot description from topic.
+[gazebo-1] [WARN] [1783854595.062335068] [controller_manager]: ResourceManager has already loaded a urdf. Ignoring attempt to reload a robot description.
+[gazebo-1] [WARN] [1783854596.420356511] [gz_ros_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[gazebo-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="lidar_demo"]/link[@name="base_link"]/sensor[@name="lidar_sensor"]/gz_frame_id:<data-string>:L94]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[spawner-5] [WARN] [1783854596.512556495] [spawner_joint_state_broadcaster]: Controller already loaded, skipping load_controller
+[spawner-5] [ERROR] [1783854596.515923659] [spawner_joint_state_broadcaster]: Failed to configure controller
+[ERROR] [spawner-5]: process has died [pid 126307, exit code 1, cmd '/opt/ros/jazzy/lib/controller_manager/spawner joint_state_broadcaster --ros-args'].
+[gazebo-1] libEGL warning: pci id for fd 119: 10de:25a2, driver (null)
+[gazebo-1] 
+[gazebo-1] pci id for fd 120: 10de:25a2, driver (null)
+[gazebo-1] pci id for fd 121: 10de:25a2, driver (null)
+[gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[gazebo-1] libEGL warning: pci id for fd 119: 10de:25a2, driver (null)
+[gazebo-1] 
+[gazebo-1] pci id for fd 120: 10de:25a2, driver (null)
+[gazebo-1] pci id for fd 121: 10de:25a2, driver (null)
+[gazebo-1] libEGL warning: egl: failed to create dri2 screen
+[gazebo-1] libEGL warning: pci id for fd 119: 10de:25a2, driver (null)
+[gazebo-1] 
+[INFO] [spawner-6]: process started with pid [126361]
+[spawner-6] [WARN] [1783854597.723055020] [spawner_diff_drive_controller]: Controller already loaded, skipping load_controller
+[spawner-6] [INFO] [1783854597.725256550] [spawner_diff_drive_controller]: waiting for service /controller_manager/configure_controller to become available...
+[gazebo-1] [INFO] [1783854597.976002121] [controller_manager]: Configuring controller: 'diff_drive_controller'
+[gazebo-1] [ERROR] [1783854597.976067591] [controller_manager]: Could not configure controller with name 'diff_drive_controller' because no controller with this name exists
+[spawner-6] [ERROR] [1783854597.977110140] [spawner_diff_drive_controller]: Failed to configure controller
+[ERROR] [spawner-6]: process has died [pid 126361, exit code 1, cmd '/opt/ros/jazzy/lib/controller_manager/spawner diff_drive_controller --ros-args'].
