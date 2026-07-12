@@ -1,0 +1,1 @@
+/home/boss/Z4Ge/build/lidar_demo/ament_cmake_environment_hooks/local_setup.bash

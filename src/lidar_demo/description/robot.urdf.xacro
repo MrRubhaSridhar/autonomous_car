@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"
+       name="lidar_demo">
+
+
+  <xacro:include filename="$(find lidar_demo)/description/materials.xacro"/>
+
+  <xacro:include filename="$(find lidar_demo)/description/robot_core.xacro"/>
+
+  <xacro:include filename="$(find lidar_demo)/description/wheels.xacro"/>
+
+  <xacro:include filename="$(find lidar_demo)/description/lidar.xacro"/>
+
+  <xacro:include filename="$(find lidar_demo)/description/ros2_control.xacro"/>
+  <xacro:include filename="$(find lidar_demo)/description/gazebo.xacro"/>
+</robot>
