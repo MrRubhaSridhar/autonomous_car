@@ -6,7 +6,11 @@ TO TEST WHEATHER CAR IS MOVING : ros2 topic pub /diff_drive_controller/cmd_vel g
 
 CMD FOR LAUNCH :  ros2 launch lidar_demo gazebo.launch.py
 
-FOR TELEOP :  ros2 run teleop_twist_keyboard teleop_twist_keyboard \ --ros-args \ -p stamped:=true \ -r cmd_vel:=                         diff_drive_controller/cmd_vel
+FOR TELEOP : ros2 run teleop_twist_keyboard teleop_twist_keyboard \
+  --ros-args \
+  -p stamped:=true \
+  -p frame_id:=base_link \
+  --remap cmd_vel:=/diff_drive_controller/cmd_vel
 
 
 
