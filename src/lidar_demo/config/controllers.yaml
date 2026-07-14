@@ -11,7 +11,7 @@ controller_manager:
 diff_drive_controller:
   ros__parameters:
 
-    use_stamped_vel: true
+    use_stamped_vel: false
     cmd_vel_topic: cmd_vel
 
     left_wheel_names:

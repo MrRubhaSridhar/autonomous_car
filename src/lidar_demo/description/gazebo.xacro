@@ -2,17 +2,7 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-
-  <!-- Gazebo Sensors System -->
-
-  <gazebo>
-
-    <plugin
-      filename="gz-sim-sensors-system"
-      name="gz::sim::systems::Sensors">
-    </plugin>
-
-  </gazebo>
-
+  <!-- Intentionally left empty.
+       The Sensors system is loaded by worlds/empty.sdf. -->
 
 </robot>

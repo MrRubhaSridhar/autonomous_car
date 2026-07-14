@@ -4,58 +4,58 @@
 
   <world name="lidar_world">
 
+    <!-- Physics -->
     <plugin
       filename="gz-sim-physics-system"
       name="gz::sim::systems::Physics"/>
 
+    <!-- User Commands -->
     <plugin
       filename="gz-sim-user-commands-system"
       name="gz::sim::systems::UserCommands"/>
 
+    <!-- Scene Broadcaster -->
     <plugin
       filename="gz-sim-scene-broadcaster-system"
       name="gz::sim::systems::SceneBroadcaster"/>
 
+    <!-- Sensors System (Required for LiDAR, Camera, IMU, etc.) -->
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors"/>
 
+    <!-- Sun -->
     <light name="sun" type="directional">
       <pose>0 0 10 0 0 0</pose>
       <cast_shadows>true</cast_shadows>
     </light>
 
-
+    <!-- Ground Plane -->
     <model name="ground_plane">
-
       <static>true</static>
 
       <link name="link">
 
         <collision name="collision">
-
           <geometry>
             <plane>
               <normal>0 0 1</normal>
               <size>100 100</size>
             </plane>
           </geometry>
-
         </collision>
 
-
         <visual name="visual">
-
           <geometry>
             <plane>
               <normal>0 0 1</normal>
               <size>100 100</size>
             </plane>
           </geometry>
-
         </visual>
 
       </link>
-
     </model>
-
 
   </world>
 

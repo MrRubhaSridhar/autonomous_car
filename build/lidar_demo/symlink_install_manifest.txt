@@ -6,6 +6,7 @@
 /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/description/ros2_control.xacro
 /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/description/wheels.xacro
 /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/launch/gazebo.launch.py
+/home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/launch/gazebo.launch.py.backup
 /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/worlds/empty.sdf
 /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/config/bridge.yaml
 /home/boss/Z4Ge/install/lidar_demo/share/lidar_demo/config/controllers.yaml
