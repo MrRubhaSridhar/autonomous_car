@@ -1,5 +1,6 @@
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, RegisterEventHandler
+from launch.event_handlers import OnProcessExit
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 from launch_ros.actions import Node
@@ -15,9 +16,9 @@ def generate_launch_description():
     pkg_share = get_package_share_directory("autonomous_car")
 
     world = os.path.join(
-    pkg_share,
-    "worlds",
-    "empty.sdf"
+        pkg_share,
+        "worlds",
+        "empty.sdf"
     )
 
     robot_file = os.path.join(
@@ -37,17 +38,23 @@ def generate_launch_description():
             )
         ),
         launch_arguments={
-            "gz_args": world +" -r"
+            "gz_args": world + " -r"
         }.items()
     )
 
     robot_state_publisher = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
+        name="robot_state_publisher",
+        output="screen",
         parameters=[
-            {"robot_description": robot_description}
+            {
+                "robot_description": robot_description,
+                "ignore_timestamp": True,
+                "publish_frequency": 100.0,
+                "use_sim_time": True,
+            }
         ],
-        output="screen"
     )
 
     spawn = Node(
@@ -61,17 +68,61 @@ def generate_launch_description():
         ],
         output="screen"
     )
-   bridge = Node(
-    package="ros_gz_bridge",
-    executable="parameter_bridge",
-    arguments=[
-        "/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan"
-    ],
-    output="screen"
-)
+
+    joint_state_broadcaster = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=[
+            "joint_state_broadcaster"
+        ],
+        output="screen"
+    )
+
+    diff_drive_controller = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=[
+            "diff_drive_controller"
+        ],
+        output="screen"
+    )
+
+    bridge = Node(
+        package="ros_gz_bridge",
+        executable="parameter_bridge",
+        arguments=[
+             "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+             "/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan",
+        ],
+        output="screen"
+    )
+
     return LaunchDescription([
+
         gazebo,
+
         robot_state_publisher,
+
         spawn,
-        bridge
+
+        bridge,
+
+        RegisterEventHandler(
+            OnProcessExit(
+                target_action=spawn,
+                on_exit=[
+                    joint_state_broadcaster
+                ]
+            )
+        ),
+
+        RegisterEventHandler(
+            OnProcessExit(
+                target_action=joint_state_broadcaster,
+                on_exit=[
+                    diff_drive_controller
+                ]
+            )
+        ),
+
     ])

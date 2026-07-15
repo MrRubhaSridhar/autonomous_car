@@ -2,7 +2,7 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <!-- ros2_control plugin -->
+  <!-- ros2_control -->
   <gazebo>
     <plugin
       filename="gz_ros2_control-system"
@@ -15,20 +15,20 @@
     </plugin>
   </gazebo>
 
-  <!-- LiDAR sensor -->
+  <!-- Gazebo Harmonic GPU LiDAR -->
   <gazebo reference="lidar_link">
 
-    <sensor name="lidar" type="gpu_lidar">
+    <sensor name="lidar_sensor" type="gpu_lidar">
 
       <always_on>true</always_on>
 
-      <update_rate>10</update_rate>
-
       <visualize>true</visualize>
+
+      <update_rate>10</update_rate>
 
       <topic>/scan</topic>
 
-      <gz_frame_id>lidar_link</gz_frame_id>
+      <pose>0 0 0 0 0 0</pose>
 
       <ray>
 
