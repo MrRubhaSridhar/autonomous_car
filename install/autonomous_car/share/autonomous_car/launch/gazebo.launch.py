@@ -1,1 +1,0 @@
-/home/boss/Z4Ge/src/autonomous_car/launch/gazebo.launch.py

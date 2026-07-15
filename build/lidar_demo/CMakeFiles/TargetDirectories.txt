@@ -1,9 +1,0 @@
-/home/boss/Z4Ge/build/lidar_demo/CMakeFiles/uninstall.dir
-/home/boss/Z4Ge/build/lidar_demo/CMakeFiles/lidar_demo_uninstall.dir
-/home/boss/Z4Ge/build/lidar_demo/CMakeFiles/test.dir
-/home/boss/Z4Ge/build/lidar_demo/CMakeFiles/edit_cache.dir
-/home/boss/Z4Ge/build/lidar_demo/CMakeFiles/rebuild_cache.dir
-/home/boss/Z4Ge/build/lidar_demo/CMakeFiles/list_install_components.dir
-/home/boss/Z4Ge/build/lidar_demo/CMakeFiles/install.dir
-/home/boss/Z4Ge/build/lidar_demo/CMakeFiles/install/local.dir
-/home/boss/Z4Ge/build/lidar_demo/CMakeFiles/install/strip.dir

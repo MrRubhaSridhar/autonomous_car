@@ -1,1 +1,0 @@
-/home/boss/Z4Ge/build/autonomous_car/ament_cmake_environment_hooks/local_setup.bash

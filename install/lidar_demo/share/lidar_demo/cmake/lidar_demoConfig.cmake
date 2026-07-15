@@ -1,1 +1,0 @@
-/home/boss/Z4Ge/build/lidar_demo/ament_cmake_core/lidar_demoConfig.cmake
